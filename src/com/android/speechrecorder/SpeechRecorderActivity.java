@@ -22,7 +22,6 @@ import android.os.Handler;
 import android.speech.srec.Recognizer;
 import android.speech.srec.WaveHeader;
 import android.speech.srec.MicrophoneInputStream;
-import android.util.Config;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -84,7 +83,7 @@ public class SpeechRecorderActivity extends Activity {
         mCommand.setText("Please click 'Record' to begin");
         mRecord.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                if (Config.LOGD) {
+                if (false) {
                     Log.d(TAG, "mRecord.OnClickListener.onClick");
                 }
 
@@ -95,7 +94,7 @@ public class SpeechRecorderActivity extends Activity {
         mRedo.setEnabled(false);
         mRedo.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                if (Config.LOGD) {
+                if (false) {
                     Log.d(TAG, "mRedo.onClickListener.onClick");
                 }
 
